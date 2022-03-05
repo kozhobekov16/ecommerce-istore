@@ -1,0 +1,32 @@
+header {
+  padding: 1rem 14rem 1rem 14rem;
+  background-color: #2e2e2e;
+  .toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 100px;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Arial;
+        color: #e8e8e8;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
