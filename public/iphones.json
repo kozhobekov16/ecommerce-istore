@@ -1,0 +1,36 @@
+{
+  "Iphones": [
+    {
+      "name": "iPhone 12 Pro Max",
+      "price": "110320 сом",
+      "id": 0,
+      "image": "https://app-room76.ru/wp-content/uploads/2020/10/iphone-12-pro-gold-hero.png",
+      "color": "Silver , Gold , Graphite , Sierra Blue",
+      "display": "Диагональ 6,7 дюйма Super Retina XDR ProMotion 120 Гц"
+    },
+    {
+      "name": "iPhone 13 Pro",
+      "price": "118200 сом",
+      "id": 1,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-blue-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652954000",
+      "color": "Sierra Blue , Silver , Graphite , Gold",
+      "display": "Диагональ 6,1 дюйма Super Retina XDR ProMotion 120 Гц"
+    },
+    {
+      "name": "iPhone 13 mini",
+      "price": "85695 сом",
+      "id": 2,
+      "image": "https://res.cloudinary.com/dpfl37yun/image/upload/v1633326492/iphone_13_mini_blue_select_2021_5fbf9d992e.png",
+      "color": "Starlight, Pink, Blue, RED, Midnight",
+      "display": "Диагональ 5,4 дюйма Super Retina XDR"
+    },
+    {
+      "name": "iPhone 13 Pro Max",
+      "price": "129035 сом",
+      "id": 3,
+      "image": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/54cd65c44fc7f90a9f2dc2bf764be4f711994dae5666c019f1e61209bf9137e6_5wYq8y_480l.jpg",
+      "color": "Pink, Starlight, Blue, Midnight",
+      "display": "Диагональ 5,4 дюйма Super Retina XDR"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.chooseMac {
+  overflow-x: hidden;
+  text-align: center;
+  .description{
+    padding: 1.5rem 0 1.5rem 0;
+    font-family: Poppins;
+    h1{
+      font-weight: 800;
+    }
+    p{
+      color: #727272;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .video{
+    text-align: center;
+    background-color: black;
+    video {
+      width: 1200px;
+      max-width: 100%;
+    }
+  }
+}

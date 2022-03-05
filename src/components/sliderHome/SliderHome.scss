@@ -1,0 +1,14 @@
+//.carousel-control-prev-icon,
+//.carousel-control-next-icon {
+//  height: 100px;
+//  width: 100px;
+//  outline: black;
+//  background-image: none;
+//}
+.carousel-control-prev-icon {
+  background-image: url('https://istore.kg/static/img/right.svg') !important;
+  transform: rotate(180deg);
+}
+.carousel-control-next-icon {
+  background-image: url('https://istore.kg/static/img/right.svg') !important;
+}

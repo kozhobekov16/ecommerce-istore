@@ -2,6 +2,8 @@ import React from "react";
 import {Routes, Route} from 'react-router-dom'
 import {Header} from './components'
 import {Home, About, Contacts, Products} from "./pages";
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 function App() {
   return (
     <section className="App">

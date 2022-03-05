@@ -1,1 +1,5 @@
 export {default as Header} from './header/Header'
+export {default as SliderHome} from './sliderHome/SliderHome'
+export {default as ChooseMac} from './choosemac/ChooseMac'
+export {default as Iphone} from './iphone/Iphone'
+export {default as CardPhone} from './cardPhone/CardPhone'
