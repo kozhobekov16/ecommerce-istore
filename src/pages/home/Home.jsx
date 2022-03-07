@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import styles from './Home.module.scss'
-import {SliderHome, ChooseMac, Iphone} from "../../components";
+import {SliderHome, ChooseMac, Iphone, CardPhoneDetail} from "../../components";
 
 function Home() {
     const [iphones, setIphones] = useState([])

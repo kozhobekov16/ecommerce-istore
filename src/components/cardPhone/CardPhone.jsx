@@ -1,21 +1,22 @@
 import React from 'react'
 import {Card, ListGroup, ListGroupItem} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 function CardPhone({datas}) {
-    console.log(datas)
+    const {image, name, price, color, id} = datas
     return(
         <div>
             <Card style={{width: '18rem'}}>
-                <Card.Img variant="top" src={datas.image}/>
+                <Card.Img variant="top" src={image}/>
                 <Card.Body>
-                    <Card.Title>{datas.name}</Card.Title>
+                    <Card.Title>{name}</Card.Title>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem>{datas.price}</ListGroupItem>
-                    <ListGroupItem>{datas.color}</ListGroupItem>
+                    <ListGroupItem>{price}</ListGroupItem>
+                    <ListGroupItem>{color}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href={datas.id}>Подробнее</Card.Link>
+                    <NavLink to={`${name}`}>Подробнее</NavLink>
                 </Card.Body>
             </Card>
         </div>

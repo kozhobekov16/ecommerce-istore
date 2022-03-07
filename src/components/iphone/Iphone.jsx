@@ -13,8 +13,8 @@ function Iphone({phoneData}) {
             </div>
             <section className={styles.cards}>
                 {phoneData.map((item) => {
-                    return(
-                        <div key={item.id}>
+                    return (
+                        <div key={`${item.id}_${item.name}`}>
                             <CardPhone datas={item}/>
                         </div>
                     )

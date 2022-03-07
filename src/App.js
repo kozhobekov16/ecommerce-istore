@@ -1,19 +1,13 @@
 import React from "react";
-import {Routes, Route} from 'react-router-dom'
-import {Header} from './components'
-import {Home, About, Contacts, Products} from "./pages";
+import {CardPhoneDetail, Header} from './components'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Router from "./routes/Router";
 
 function App() {
   return (
     <section className="App">
       <Header/>
-      <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/products' element={<Products/>}/>
-          <Route path='/contacts' element={<Contacts/>}/>
-      </Routes>
+       <Router/>
     </section>
   );
 }
