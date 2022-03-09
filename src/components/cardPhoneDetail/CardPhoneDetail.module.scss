@@ -1,0 +1,22 @@
+.main{
+  padding: 1rem 14rem 1rem 14rem;
+  .iconBack{
+    font-size: 36px;
+    color: #3d3d3d;
+  }
+}
+.aboutPhone{
+  display: flex;
+  justify-content: space-between;
+}
+.phone{
+  img{
+    width: 400px;
+    transition: .4s;
+    &:hover {
+      transform: scale(1.1);
+      transition: .4s;
+    }
+  }
+
+}

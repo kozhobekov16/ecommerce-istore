@@ -3,7 +3,7 @@ import {Card, ListGroup, ListGroupItem} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
 function CardPhone({datas}) {
-    const {image, name, price, color, id} = datas
+    const {image, name, price, color} = datas
     return(
         <div>
             <Card style={{width: '18rem'}}>
@@ -16,7 +16,7 @@ function CardPhone({datas}) {
                     <ListGroupItem>{color}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>
-                    <NavLink to={`${name}`}>Подробнее</NavLink>
+                    <NavLink to={`/cardPhone/${name}`}>Подробнее</NavLink>
                 </Card.Body>
             </Card>
         </div>

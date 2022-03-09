@@ -2,15 +2,22 @@ import React from 'react'
 import {NavLink} from "react-router-dom";
 import styles from './Header.module.scss'
 import logo from '../../assets/img/istore_logo.png'
+import basket from '../../assets/img/basket.webp'
+import {useSelector} from "react-redux";
+import addToCard from "../../redux/reducers/addToCard";
 
 function Header() {
+    const state = useSelector(addcard => addcard.addToCard)
     return (
         <header>
             <div className={styles.toolbar}>
                 <NavLink to='/'>
                     <img src={logo} alt="logo"/>
                 </NavLink>
-                <span>basket</span>
+                <div className={styles.basket}>
+                    <img src={basket} alt="basket" />
+                    <span className={styles.count}>{state}</span>
+                </div>
             </div>
             <ul className={styles.menu}>
                 <li>
