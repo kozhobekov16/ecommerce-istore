@@ -13,6 +13,9 @@ function CardPhoneDetail() {
         fetch('http://localhost:3000/iphones.json')
             .then(resp => resp.json())
             .then(data => setData(data.Iphones))
+        return (() => {
+            return
+        })
     })
     const {id} = useParams()
     const dispatch = useDispatch()
@@ -26,9 +29,10 @@ function CardPhoneDetail() {
             setActiveButton('Добавить в корзину')
         }
     }
+
     return (
         <div className={styles.main}>
-             {data.filter(item => item.name === id).map(elem => {
+            {data.filter(item => item.name === id).map(elem => {
                 return (
                     <div className={styles.aboutPhone} key={elem.id}>
                         <div className={styles.phone}>

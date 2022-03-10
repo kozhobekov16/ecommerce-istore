@@ -5,7 +5,9 @@ const addToCard = (state = addItem, action) => {
         case 'ADDITEM':
             return [...state, action.payload]
         case 'REMOVEITEM':
-            return state - 1
+            return state = state.filter((x) => {
+                return  x.id !== action.payload.id
+            })
         default:
             return state
     }
