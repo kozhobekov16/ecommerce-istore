@@ -1,9 +1,9 @@
-const addItem = 0
+const addItem = []
 
 const addToCard = (state = addItem, action) => {
     switch (action.type) {
         case 'ADDITEM':
-            return state + 1
+            return [...state, action.payload]
         case 'REMOVEITEM':
             return state - 1
         default:

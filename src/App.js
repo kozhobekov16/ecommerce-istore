@@ -1,5 +1,5 @@
 import React from "react";
-import {CardPhoneDetail, Header} from './components'
+import {Header} from './components'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Router from "./routes/Router";
 

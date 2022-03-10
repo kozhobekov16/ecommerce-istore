@@ -16,9 +16,10 @@ function CardPhoneDetail() {
     })
     const {id} = useParams()
     const dispatch = useDispatch()
-    const handleClick = () => {
+
+    const handleClick = (elem) => {
         if (activeButton === 'Добавить в корзину') {
-            dispatch(addToCard())
+            dispatch(addToCard(elem))
             setActiveButton('Удалить с корзины')
         } else {
             dispatch(removeInCard())
@@ -27,9 +28,9 @@ function CardPhoneDetail() {
     }
     return (
         <div className={styles.main}>
-            {data.filter(item => item.name === id).map(elem => {
+             {data.filter(item => item.name === id).map(elem => {
                 return (
-                    <div className={styles.aboutPhone}>
+                    <div className={styles.aboutPhone} key={elem.id}>
                         <div className={styles.phone}>
                             <img src={elem.image} alt={elem.name}/>
                             <div>
@@ -50,7 +51,7 @@ function CardPhoneDetail() {
                                 <Card.Text>
                                     Дисплей: {elem.display}
                                 </Card.Text>
-                                <Button variant="primary" onClick={() => handleClick()}>{activeButton}</Button>
+                                <Button variant="primary" onClick={() => handleClick(elem)}>{activeButton}</Button>
                             </Card.Body>
                         </Card>
                     </div>
