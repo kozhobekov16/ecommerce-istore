@@ -5,11 +5,20 @@
 .cards {
   width: 18rem;
 }
-@media (min-width: 1080px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
     .cards{
         width: 14rem;
         img{
             width: 170px;
         }
     }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+   .cards{
+       width: 10rem;
+       img{
+           width: 140px;
+       }
+   }
 }
