@@ -15,7 +15,7 @@ function Basket() {
                         <h2>
                             {item.name}
                         </h2>
-                        <button onClick={() => dispatch(removeInCard())}>Remove</button>
+                        <button onClick={() => dispatch(removeInCard(item))}>Remove</button>
                     </div>
                 )
             })

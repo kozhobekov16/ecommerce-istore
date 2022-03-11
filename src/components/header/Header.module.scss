@@ -7,11 +7,21 @@ header {
   padding: 0rem 14rem 6px 14rem;
   background-color: #f1f1f1;
   .toolbar {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     img {
       width: 100px;
+    }
+    .links{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      a{
+        text-decoration: none;
+        color: black;
+      }
     }
     .basket{
       position: relative;

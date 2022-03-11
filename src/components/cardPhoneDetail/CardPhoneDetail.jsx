@@ -25,7 +25,7 @@ function CardPhoneDetail() {
             dispatch(addToCard(elem))
             setActiveButton('Удалить с корзины')
         } else {
-            dispatch(removeInCard())
+            dispatch(removeInCard(elem))
             setActiveButton('Добавить в корзину')
         }
     }
@@ -39,7 +39,9 @@ function CardPhoneDetail() {
                             <img src={elem.image} alt={elem.name}/>
                             <div>
                                 <NavLink to='/'
-                                         className={styles.iconBack}><FaLongArrowAltLeft></FaLongArrowAltLeft></NavLink>
+                                         className={styles.iconBack}>
+                                    <FaLongArrowAltLeft></FaLongArrowAltLeft>
+                                </NavLink>
                             </div>
                         </div>
                         <Card>

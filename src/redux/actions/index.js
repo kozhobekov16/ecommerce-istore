@@ -4,8 +4,9 @@ export const addToCard = (elem) => {
         payload: elem
     }
 }
-export const removeInCard = () => {
+export const removeInCard = (elem) => {
     return {
-        type: 'REMOVEITEM'
+        type: 'REMOVEITEM',
+        payload: elem
     }
 }

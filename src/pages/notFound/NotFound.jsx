@@ -1,9 +1,9 @@
 import React from "react";
-import notFoundImg from '../../assets/img/404-error-template-10.png'
+import notFoundImg from '../../assets/img/404.svg'
 function NotFound() {
     return(
-        <div>
-            <img src={notFoundImg} alt="notf" style={{width: '100%'}}/>
+        <div style={{ textAlign: 'center'}}>
+            <img src={notFoundImg} alt="notf" style={{width: '50%', marginTop: '2rem'}}/>
         </div>
     )
 }
