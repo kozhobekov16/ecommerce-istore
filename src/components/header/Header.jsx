@@ -1,9 +1,9 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from './Header.module.scss'
 import logo from '../../assets/img/istore_logo.png'
 import basket from '../../assets/img/basket.webp'
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 function Header() {
     const state = useSelector(addcard => addcard.addToCard)
@@ -11,7 +11,7 @@ function Header() {
         <header>
             <div className={styles.toolbar}>
                 <NavLink to='/'>
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo" />
                 </NavLink>
                 <p>
                     Магазин техники
@@ -30,7 +30,7 @@ function Header() {
                     </a>
                 </div>
                 <NavLink to='/basket' className={styles.basket}>
-                    <img src={basket} alt="basket"/>
+                    <img src={basket} alt="basket" />
                     <span className={styles.count}>{state.length}</span>
                 </NavLink>
             </div>
@@ -48,7 +48,7 @@ function Header() {
                     <NavLink to="/g">Гарантия</NavLink>
                 </li>
                 <li>
-                    <a href="">В кредит</a>
+                    <a href="/">В кредит</a>
                 </li>
                 <li>
                     <NavLink to="/contacts">Контакты</NavLink>

@@ -1,0 +1,15 @@
+.main{
+   padding: 0;
+}
+
+.cards {
+  width: 18rem;
+}
+@media (min-width: 1080px) and (max-width: 1400px) {
+    .cards{
+        width: 14rem;
+        img{
+            width: 170px;
+        }
+    }
+}
