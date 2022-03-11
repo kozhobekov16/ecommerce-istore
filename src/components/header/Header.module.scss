@@ -109,3 +109,17 @@ header {
   }
 }
 
+@media (min-width: 767px) and (max-width: 1080px) {
+  header{
+    .toolbar{
+      p{
+        font-size: 12px;
+      }
+      .links{
+        a{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
