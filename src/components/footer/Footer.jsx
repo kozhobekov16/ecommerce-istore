@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from '../../assets/img/istore_logo.png'
+import styles from './Footer.module.scss'
 
 function Footer() {
     return(
-        <div>
+        <div className={styles.footer}>
             <div>
                 <img src={logo} alt=""/>
             </div>

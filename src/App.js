@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from './components'
+import {Header, Footer} from './components'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Router from "./routes/Router";
 
@@ -8,6 +8,7 @@ function App() {
     <section className="App">
       <Header/>
        <Router/>
+       <Footer/>
     </section>
   );
 }
