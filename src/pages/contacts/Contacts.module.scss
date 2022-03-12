@@ -1,0 +1,18 @@
+@import "src/assets/fonts/Poppins/Poppins-Black.ttf";
+.contacts{
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 14rem;
+    div{
+        margin-top: 2rem;
+    }
+    h2{
+        text-align: center;
+    }
+    h5{
+        color: rgb(107, 107, 107);
+    }
+    .call{
+        display: flex;
+        flex-direction: column;
+    }
+}

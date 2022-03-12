@@ -29,7 +29,7 @@ function CardPhoneDetail() {
             setActiveButton('Добавить в корзину')
         }
     }
-
+    
     return (
         <div className={styles.main}>
             {data.filter(item => item.name === id).map(elem => {

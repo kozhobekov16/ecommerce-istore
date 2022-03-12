@@ -9,7 +9,7 @@ function Iphone({phoneData}) {
                 <h2>Выберите свой iPhone</h2>
                 <p>Сравните все модели iPhone
                 </p>
-                <a href="#">больше моделей</a>
+                <a href="/">больше моделей</a>
             </div>
             <section className={styles.cards}>
                 {phoneData.map((item) => {
