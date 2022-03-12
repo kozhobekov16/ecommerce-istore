@@ -5,7 +5,7 @@ import logo from '../../assets/img/istore_logo.png'
 import basket from '../../assets/img/basket.webp'
 import { useSelector } from "react-redux";
 
-function Header() {
+function Header({ changeTheme , Sun, Moon, change}) {
     const state = useSelector(addcard => addcard.addToCard)
     return (
         <header>
@@ -52,6 +52,9 @@ function Header() {
                 </li>
                 <li>
                     <NavLink to="/contacts">Контакты</NavLink>
+                </li>
+                <li className={styles.theme} onClick={changeTheme}>
+                    {change ? <Sun className={styles.sun}/> : <Moon className={styles.mood}/>}
                 </li>
             </ul>
         </header>
