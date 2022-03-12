@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { About, Contacts, Home, NotFound, Catalog } from "../pages";
+import { About, Contacts, Home, NotFound, Catalog, Credit } from "../pages";
 import { CardPhoneDetail } from "../components";
 import Basket from "../pages/basket/Basket";
 
@@ -13,6 +13,7 @@ function Router() {
                 <Route path='/contacts' element={<Contacts />} />
                 <Route path='/catalog' element={<Catalog/>}/>
                 <Route path='/basket' element={<Basket />} />
+                <Route path='/credit' element={<Credit/>}/>
                 <Route path='/cardPhone/:id' element={<CardPhoneDetail />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>

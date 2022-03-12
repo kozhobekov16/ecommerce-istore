@@ -45,10 +45,10 @@ function Header() {
                     <NavLink to="/catalog">Продукция</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/g">Гарантия</NavLink>
+                    <NavLink to="/garantiya">Гарантия</NavLink>
                 </li>
                 <li>
-                    <a href="/">В кредит</a>
+                    <NavLink to="/credit">В кредит</NavLink>
                 </li>
                 <li>
                     <NavLink to="/contacts">Контакты</NavLink>
