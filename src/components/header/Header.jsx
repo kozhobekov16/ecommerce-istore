@@ -42,7 +42,7 @@ function Header() {
                     <NavLink to="/about">О нас</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/products">Продукция</NavLink>
+                    <NavLink to="/catalog">Продукция</NavLink>
                 </li>
                 <li>
                     <NavLink to="/g">Гарантия</NavLink>

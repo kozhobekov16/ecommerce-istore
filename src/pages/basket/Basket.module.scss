@@ -9,7 +9,17 @@
   }
   .productName {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    transition: .4s ease-in-out;
+    background-color: #f7f4f4;
+    border-radius: 7px;
+    padding: 1rem;
+    &:hover{
+      box-shadow: 0 0 10px rgba(0,0,0,0.10);
+      transition: .4s ease-in;
+      background-color: #f1f1f1;
+    }
     .product {
       display: flex;
       flex-direction: column;
@@ -38,8 +48,8 @@
     }
     .remove{
       cursor: pointer;
-      font-size: 40px;
-      color: rgb(247, 29, 29);
+      font-size: 30px;
+      color: #1b45b3;
       transform: rotate(0deg);
       &:hover{
         transform: rotate(360deg);
