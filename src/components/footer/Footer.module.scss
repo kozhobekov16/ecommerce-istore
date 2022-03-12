@@ -1,5 +1,35 @@
-.footer{
-    img{
-        width: 150px;
-    }
+.footer {
+  padding: 2rem 14rem 2rem 14rem;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 90px;
+  }
+  .block{
+      line-height: 35px;
+      p{
+          font-weight: 300;
+      }
+  }
+  .products{
+      display: flex;
+      flex-direction: column;
+      a{
+          padding-top: 6px;
+          text-decoration: none;
+          font-weight: 300;
+      }
+  }
+  .contacts{
+      display: flex;
+      flex-direction: column;
+      p{
+          font-weight: 300;
+      }
+      a{
+          padding-top: 6px;
+          text-decoration: none;
+          font-weight: 300;
+      }
+  }
 }

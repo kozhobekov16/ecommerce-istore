@@ -81,6 +81,7 @@ header {
       }
       p {
         font-size: 14px;
+        font-weight: 200;
       }
       .links {
         a {
@@ -110,13 +111,13 @@ header {
 }
 
 @media (min-width: 767px) and (max-width: 1080px) {
-  header{
-    .toolbar{
-      p{
+  header {
+    .toolbar {
+      p {
         font-size: 12px;
       }
-      .links{
-        a{
+      .links {
+        a {
           font-size: 12px;
         }
       }
