@@ -1,20 +1,25 @@
-.macbooks{
-    padding: 2rem 14rem;
+@import "src/assets/fonts/Poppins/Poppins-Black.ttf";
+.main {
+  padding: 2rem 14rem;
+  font-family: "Poppins", sans-serif;
+  .macbooks {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    .block{
-        padding: 14px;
-        transition: .4s ease-in-out;
-        &:hover{
-            background-color: #f1f1f1;
-            transition: .4s ease-in;
-        }
-        img{
-            width: 200px;
-        }
-        h4{
-            padding-top: 1rem;
-        }
+    cursor: pointer;
+    .block {
+      padding: 14px;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        background-color: #f1f1f1;
+        transition: 0.4s ease-in;
+      }
+      img {
+        width: 200px;
+      }
+      h4 {
+        padding-top: 1rem;
+      }
     }
+  }
 }

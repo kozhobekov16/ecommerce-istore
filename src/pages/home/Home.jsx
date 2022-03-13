@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.scss'
-import { SliderHome, ChooseMac, Iphone, } from "../../components";
+import {Macbooks} from '../../pages'
+import { SliderHome, ChooseMac, Iphone} from "../../components";
 
 function Home() {
     const [iphones, setIphones] = useState([])
@@ -19,6 +20,7 @@ function Home() {
             <SliderHome />
             <Iphone phoneData={iphones} />
             <ChooseMac />
+            <Macbooks/>
         </div>
     )
 }
