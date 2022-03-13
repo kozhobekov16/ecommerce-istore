@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Macbooks.module.scss'
+import { FaLongArrowAltLeft } from 'react-icons/fa'
 
 const Macbooks = () => {
     const [macbooks, setMacbooks] = useState([])
@@ -17,16 +18,19 @@ const Macbooks = () => {
             <h3>Mac</h3>
             <div className={styles.macbooks}>
                 {macbooks.map(mac => (
-                    <div key={mac.id} className={styles.block}>
+                    <NavLink
+                        to={`/catalog/macbooks/${mac.name}`}
+                        key={mac.id}
+                        className={styles.block}>
                         <img src={mac.image} alt={mac.name} />
                         <h4>
                             {mac.name}
                         </h4>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
             <NavLink to="/catalog" className={styles.back}>
-                Вернуться
+                <FaLongArrowAltLeft></FaLongArrowAltLeft>
             </NavLink>
         </div>
     )
