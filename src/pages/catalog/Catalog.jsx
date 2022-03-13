@@ -3,7 +3,7 @@ import styles from './Catalog.module.scss'
 import mac from '../../assets/img/macbooks/neeew_v4BVwYs.webp'
 import iiPhone from '../../assets/img/iphons/new.png'
 import watch from '../../assets/img/watches/watches.png'
-
+import { NavLink } from 'react-router-dom'
 const Catalog = () => {
     const catalogs = [
         {
@@ -35,7 +35,7 @@ const Catalog = () => {
                             <img src={elem.image} alt={elem.name} />
                             <div className={styles.flex}>
                                 <h4>{elem.name}</h4>
-                                <a href="/">{elem.link}</a>
+                                <NavLink to={`/catalog/${elem.name}`}>{elem.link}</NavLink>
                             </div>
                         </div>
                     )

@@ -1,5 +1,5 @@
 {
-  "Iphones": [
+  "iPhones": [
     {
       "name": "iPhone 12 Pro Max",
       "price": "110320 сом",
@@ -31,6 +31,35 @@
       "image": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/54cd65c44fc7f90a9f2dc2bf764be4f711994dae5666c019f1e61209bf9137e6_5wYq8y_480l.jpg",
       "color": "Pink, Starlight, Blue, Midnight",
       "display": "Диагональ 5,4 дюйма Super Retina XDR"
+    }
+  ],
+  "macbooks": [
+    {
+      "name": "MacBook Pro 16",
+      "id": 0,
+      "image": "https://istore.kg/media/products/Pro-16-M1-Silver-US-1_hi3xVms.webp",
+      "price": "от 330150 сом",
+      "proceccor": "Apple M1 Pro",
+      "ssd": "SSD-накопитель 1 ТБ",
+      "om": "16 ГБ объединённой памяти" 
+    },
+    {
+      "name": "MacBook Pro 14",
+      "id": 1,
+      "image": "https://istore.kg/media/products/Pro-14-M1-SP-US-1_DGJnWMm.webp",
+      "price": "от 292875 сом",
+      "proceccor": "Apple M1 Pro",
+      "ssd": "SSD-накопитель 512 ГБ",
+      "om": "16 ГБ объединённой памяти" 
+    },
+    {
+      "name": "MacBook Air 13",
+      "id": 2,
+      "image": "https://istore.kg/media/products/air-13-8-core-gray_Mo1SS1h.webp",
+      "price": "от 146970 сом",
+      "proceccor": "Apple M1",
+      "ssd": "SSD-накопитель 512 ГБ",
+      "om": "8 ГБ объединённой памяти" 
     }
   ]
 }

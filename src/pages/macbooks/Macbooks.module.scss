@@ -1,0 +1,20 @@
+.macbooks{
+    padding: 2rem 14rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .block{
+        padding: 14px;
+        transition: .4s ease-in-out;
+        &:hover{
+            background-color: #f1f1f1;
+            transition: .4s ease-in;
+        }
+        img{
+            width: 200px;
+        }
+        h4{
+            padding-top: 1rem;
+        }
+    }
+}

@@ -10,9 +10,9 @@ function CardPhoneDetail() {
     const [data, setData] = useState([])
     const [activeButton, setActiveButton] = useState('Добавить в корзину')
     useEffect(() => {
-        fetch('http://localhost:3000/iphones.json')
+        fetch('http://localhost:3000/data.json')
             .then(resp => resp.json())
-            .then(data => setData(data.Iphones))
+            .then(data => setData(data.iPhones))
         return (() => {
             return
         })
