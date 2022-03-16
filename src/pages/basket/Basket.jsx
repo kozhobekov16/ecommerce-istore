@@ -38,6 +38,13 @@ function Basket() {
                                             <p>
                                                 {item.color}
                                             </p>
+                                            <p>
+                                                {item.proceccor}
+                                            </p>
+                                            <p>
+                                                {item.om}
+                                            </p>
+
                                         </div>
 
 

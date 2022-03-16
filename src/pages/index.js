@@ -9,4 +9,5 @@ export { default as Macbooks } from './macbooks/Macbooks'
 export { default as MacbookDetail } from './macbookDetail/MacbookDetail'
 export { default as Iphone} from './iphone/Iphone'
 export { default as Watches} from './watches/Watches'
+export { default as WatchesDetail} from './watchesDetail/WatchesDetail'
 

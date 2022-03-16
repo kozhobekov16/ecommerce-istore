@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Watches.module.scss'
+import { NavLink } from 'react-router-dom'
+
 const Watches = () => {
 
     const [watch, setWatch] = useState([])
@@ -28,6 +30,9 @@ const Watches = () => {
                         <p>
                             {elem.color}
                         </p>
+                        <NavLink to={`/catalog/Watch/${elem.name}`}>
+                            Подробнее...
+                        </NavLink>
                     </div>
                 ))}
             </div>

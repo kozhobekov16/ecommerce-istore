@@ -16,15 +16,20 @@ const Macbooks = () => {
             <h3>Mac</h3>
             <div className={styles.macbooks}>
                 {macbook.map(mac => (
-                    <NavLink
+                    <div
                         to={`/catalog/macbooks/${mac.name}`}
                         key={mac.id}
                         className={styles.block}>
                         <img src={mac.image} alt={mac.name} />
-                        <h4>
+                        <NavLink to={`/catalog/macbooks/${mac.name}`}>
                             {mac.name}
-                        </h4>
-                    </NavLink>
+                        </NavLink>
+                        <h5>{mac.proceccor}</h5>
+                        <h6>{mac.price}</h6>
+                        <NavLink to={`/catalog/macbooks/${mac.name}`}>
+                            <p>Подробнее...</p>
+                        </NavLink>
+                    </div>
                 ))}
             </div>
         </div>

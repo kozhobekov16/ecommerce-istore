@@ -16,8 +16,8 @@ function Home() {
             </div>
             <Iphone />
             <ChooseMac />
-            <Macbooks/>
             <Watches/>
+            <Macbooks/>
         </div>
     )
 }

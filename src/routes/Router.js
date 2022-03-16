@@ -11,7 +11,8 @@ import {
     MacbookDetail,
     Iphone,
     Basket,
-    Watches
+    Watches,
+    WatchesDetail
 } from "../pages";
 import { CardPhoneDetail } from "../components";
 
@@ -28,6 +29,7 @@ function Router() {
                 <Route path='/catalog/iphone' element={<Iphone />} />
                 <Route path='/basket' element={<Basket />} />
                 <Route path='/catalog/Watch' element={<Watches/>}/>
+                <Route path='/catalog/Watch/:name' element={<WatchesDetail/>}/>
                 <Route path='/credit' element={<Credit />} />
                 <Route path='/cardPhone/:id' element={<CardPhoneDetail />} />
                 <Route path='*' element={<NotFound />} />
