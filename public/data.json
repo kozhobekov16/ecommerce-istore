@@ -12,7 +12,7 @@
       "name": "iPhone 13 Pro",
       "price": "118200 сом",
       "id": 1,
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-blue-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652954000",
+      "image": "https://istore.kg/media/products/iphone-13-pro-green-select_imHld8e.webp",
       "color": "Sierra Blue , Silver , Graphite , Gold",
       "display": "Диагональ 6,1 дюйма Super Retina XDR ProMotion 120 Гц"
     },
@@ -25,10 +25,10 @@
       "display": "Диагональ 5,4 дюйма Super Retina XDR"
     },
     {
-      "name": "iPhone 13 Pro Max",
-      "price": "129035 сом",
+      "name": "iPhone 11",
+      "price": "от 66030 сом",
       "id": 3,
-      "image": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/54cd65c44fc7f90a9f2dc2bf764be4f711994dae5666c019f1e61209bf9137e6_5wYq8y_480l.jpg",
+      "image": "https://istore.kg/media/products/11-black_qdkqJZQ.webp",
       "color": "Pink, Starlight, Blue, Midnight",
       "display": "Диагональ 5,4 дюйма Super Retina XDR"
     }
@@ -41,7 +41,7 @@
       "price": "от 330150 сом",
       "proceccor": "Apple M1 Pro",
       "ssd": "SSD-накопитель 1 ТБ",
-      "om": "16 ГБ объединённой памяти" 
+      "om": "16 ГБ объединённой памяти"
     },
     {
       "name": "MacBook Pro 14",
@@ -50,7 +50,7 @@
       "price": "от 292875 сом",
       "proceccor": "Apple M1 Pro",
       "ssd": "SSD-накопитель 512 ГБ",
-      "om": "16 ГБ объединённой памяти" 
+      "om": "16 ГБ объединённой памяти"
     },
     {
       "name": "MacBook Air 13",
@@ -59,7 +59,30 @@
       "price": "от 146970 сом",
       "proceccor": "Apple M1",
       "ssd": "SSD-накопитель 512 ГБ",
-      "om": "8 ГБ объединённой памяти" 
+      "om": "8 ГБ объединённой памяти"
+    }
+  ],
+  "watches": [
+    {
+      "name": "Watch Series 7 with Stainless Steel Case",
+      "image": "https://istore.kg/media/products/stainless-graphite-41.webp",
+      "price": "от 100700 сом",
+      "color": "Graphite , Gold , Silver",
+      "display": "Всегда включённый дисплей OLED LTPO с технологией Retina, яркость 1000 кд/м² Дисплей из стекла Ion‑X"
+    },
+    {
+      "name": "Watch Series 7 Nike with Aluminum Case",
+      "image": "https://istore.kg/media/products/7-41-Nike-Starlight-GPS.webp",
+      "price": "от 53000 сом",
+      "color": "Pure Platinum/Black , Anthracite/Black",
+      "display": "Всегда включённый дисплей OLED LTPO с технологией Retina, яркость 1000 кд/м² Дисплей из стекла Ion‑X"
+    },
+    {
+      "name": "Watch Series 7 with Aluminum Case",
+      "image": "https://istore.kg/media/products/7-41-Red-GPS.webp",
+      "price": "от 46640 сом",
+      "color": "Clover , Midnight , Starlight , Abyss Blue , (PRODUCT)RED",
+      "display": "Всегда включённый дисплей OLED LTPO с технологией Retina, яркость 1000 кд/м² Дисплей из стекла Ion‑X"
     }
   ]
 }

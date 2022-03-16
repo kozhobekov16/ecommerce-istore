@@ -1,18 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from './Iphone.module.scss'
 import {CardPhone} from "../../components";
 
-function Iphone({phoneData}) {
+function Iphone() {
+    const [iphones, setIphones] = useState([])
+
+    useEffect(() => {
+            async function fetchDB() {
+                const fetchData = await fetch('http://localhost:3000/data.json')
+                const resp = await fetchData.json()
+                setIphones(resp.iPhones)
+            }
+        fetchDB()
+    }, [])
+
     return (
         <div>
-            <div className={styles.description}>
-                <h2>Выберите свой iPhone</h2>
-                <p>Сравните все модели iPhone
-                </p>
-                <a href="/">больше моделей</a>
-            </div>
             <section className={styles.cards}>
-                {phoneData.map((item) => {
+                {iphones.map((item) => {
                     return (
                         <div key={`${item.id}_${item.name}`}>
                             <CardPhone datas={item}/>

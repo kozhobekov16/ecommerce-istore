@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './Home.module.scss'
-import {Macbooks} from '../../pages'
-import { SliderHome, ChooseMac, Iphone} from "../../components";
+import {Macbooks, Iphone, Watches} from '../../pages'
+import { SliderHome, ChooseMac} from "../../components";
+import { NavLink } from 'react-router-dom';
 
 function Home() {
-    const [iphones, setIphones] = useState([])
-
-    useEffect(() => {
-        async function fetchDB() {
-            const fetchData = await fetch('http://localhost:3000/data.json')
-            const resp = await fetchData.json()
-            setIphones(resp.iPhones)
-        }
-        fetchDB()
-    }, [])
-
     return (
         <div className={styles.homePage}>
             <SliderHome />
-            <Iphone phoneData={iphones} />
+            <div className={styles.description}>
+                <h2>Выберите свой iPhone</h2>
+                <p>Сравните все модели iPhone
+                </p>
+                <NavLink to="/catalog/iphone">больше моделей</NavLink>
+            </div>
+            <Iphone />
             <ChooseMac />
             <Macbooks/>
+            <Watches/>
         </div>
     )
 }

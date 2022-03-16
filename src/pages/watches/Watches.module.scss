@@ -1,0 +1,16 @@
+.main {
+  padding: 2rem 14rem;
+  .watches {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    .watch {
+      img {
+        width: 170px;
+      }
+      h4{
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

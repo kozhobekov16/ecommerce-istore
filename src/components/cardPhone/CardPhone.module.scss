@@ -1,10 +1,12 @@
 .main{
    padding: 0;
-   color: black;
 }
 
 .cards {
   width: 18rem;
+  img{
+      width: 200px;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .cards{

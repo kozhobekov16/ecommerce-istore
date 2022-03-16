@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
-import {useParams, NavLink} from 'react-router-dom'
-import {Card, Button} from 'react-bootstrap'
+import React, { useEffect, useState } from "react";
+import { useParams, NavLink } from 'react-router-dom'
+import { Card, Button } from 'react-bootstrap'
 import styles from './CardPhoneDetail.module.scss'
-import {FaLongArrowAltLeft} from 'react-icons/fa'
-import {useDispatch} from "react-redux";
-import {addToCard, removeInCard} from "../../redux/actions";
+import { FaLongArrowAltLeft } from 'react-icons/fa'
+import { useDispatch } from "react-redux";
+import { addToCard, removeInCard } from "../../redux/actions";
 
 function CardPhoneDetail() {
     const [data, setData] = useState([])
@@ -13,11 +13,9 @@ function CardPhoneDetail() {
         fetch('http://localhost:3000/data.json')
             .then(resp => resp.json())
             .then(data => setData(data.iPhones))
-        return (() => {
-            return
-        })
-    })
-    const {id} = useParams()
+    }, [])
+
+    const { id } = useParams()
     const dispatch = useDispatch()
 
     const handleClick = (elem) => {
@@ -29,17 +27,17 @@ function CardPhoneDetail() {
             setActiveButton('Добавить в корзину')
         }
     }
-    
+
     return (
         <div className={styles.main}>
             {data.filter(item => item.name === id).map(elem => {
                 return (
                     <div className={styles.aboutPhone} key={elem.id}>
                         <div className={styles.phone}>
-                            <img src={elem.image} alt={elem.name}/>
+                            <img src={elem.image} alt={elem.name} />
                             <div>
-                                <NavLink to='/'
-                                         className={styles.iconBack}>
+                                <NavLink to='/catalog'
+                                    className={styles.iconBack}>
                                     <FaLongArrowAltLeft></FaLongArrowAltLeft>
                                 </NavLink>
                             </div>

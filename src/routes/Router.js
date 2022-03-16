@@ -8,10 +8,12 @@ import {
     Catalog,
     Credit,
     Macbooks,
-    MacbookDetail
+    MacbookDetail,
+    Iphone,
+    Basket,
+    Watches
 } from "../pages";
 import { CardPhoneDetail } from "../components";
-import Basket from "../pages/basket/Basket";
 
 function Router() {
     return (
@@ -21,9 +23,11 @@ function Router() {
                 <Route path='/about' element={<About />} />
                 <Route path='/contacts' element={<Contacts />} />
                 <Route path='/catalog' element={<Catalog />} />
-                <Route path='/catalog/:macbooks' element={<Macbooks />} />
+                <Route path='/catalog/Mac' element={<Macbooks />} />
                 <Route path='/catalog/:macbooks/:name' element={<MacbookDetail />} />
+                <Route path='/catalog/iphone' element={<Iphone />} />
                 <Route path='/basket' element={<Basket />} />
+                <Route path='/catalog/Watch' element={<Watches/>}/>
                 <Route path='/credit' element={<Credit />} />
                 <Route path='/cardPhone/:id' element={<CardPhoneDetail />} />
                 <Route path='*' element={<NotFound />} />
