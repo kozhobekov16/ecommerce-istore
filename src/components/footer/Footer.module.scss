@@ -35,3 +35,15 @@
       }
   }
 }
+
+@media (min-width:  668px) and (max-width: 1080px){
+    .footer{
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width: 668px){
+    .footer{
+        display: block;
+        padding: 1rem 2rem;
+    }
+}

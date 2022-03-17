@@ -4,7 +4,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 1rem 14rem 1rem 14rem;
+  padding: 1rem 14rem;
   color: black;
   background-color: #f1f1f1;
   .toolbar {
@@ -96,6 +96,7 @@ header {
 
 @media (min-width: 1284px) and (max-width: 1400px) {
   header {
+    padding: 1 10rem;
     .toolbar {
       img {
         width: 90px;
@@ -115,6 +116,7 @@ header {
 
 @media (min-width: 1080px) and (max-width: 1284px) {
   header {
+    padding: 1 1rem;
     .toolbar {
       .logo {
         width: 70px;
@@ -138,16 +140,17 @@ header {
 
 @media (min-width: 767px) and (max-width: 1080px) {
   header {
+    padding: 1rem 4rem;
     .toolbar {
       img {
-        width: 60px;
+        width: 80px;
       }
       p {
         display: none;
       }
       .links {
         a {
-          font-size: 9px;
+          font-size: 14px;
         }
       }
     }
@@ -162,6 +165,7 @@ header {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   header {
+    padding: 1rem;
     .toolbar {
       p {
         display: none;
@@ -170,7 +174,7 @@ header {
   }
 }
 
-@media (min-width: 240px) and (max-width: 480px){
+@media (min-width: 240px) and (max-width: 480px) {
   header {
     .toolbar {
       p {
