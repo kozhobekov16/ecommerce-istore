@@ -12,3 +12,19 @@
 .carousel-control-next-icon {
   background-image: url('https://istore.kg/static/img/right.svg') !important;
 }
+.slider{
+  text-align: center;
+  img{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1080px){
+  .slider{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+}

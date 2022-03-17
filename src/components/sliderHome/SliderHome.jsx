@@ -9,7 +9,7 @@ import cashback from '../../assets/img/cashabck-promotion.webp'
 import './SliderHome.scss'
 function SliderHome() {
     return (
-        <Carousel fade indicators={false}>
+        <Carousel fade indicators={false} className='slider'>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

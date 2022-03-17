@@ -11,7 +11,7 @@ function Header({ changeTheme , Sun, Moon, change}) {
         <header>
             <div className={styles.toolbar}>
                 <NavLink to='/'>
-                    <img src={logo} alt="logo" />
+                    <img src={logo} className={styles.logo} alt="logo" />
                 </NavLink>
                 <p>
                     Магазин техники

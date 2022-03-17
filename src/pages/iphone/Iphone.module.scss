@@ -4,3 +4,26 @@
   padding: 2rem 14rem 4rem 14rem;
   text-align: center;
 }
+
+@media (min-width: 767px) and (max-width: 1080px){
+  .cards{
+    padding: 1rem 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+  .cards{
+    padding: 1rem 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .cards{
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

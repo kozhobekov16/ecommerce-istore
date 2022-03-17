@@ -29,3 +29,52 @@
     }
   }
 }
+
+@media (min-width: 767px) and (max-width: 1080px){
+  .main{
+    padding: 1rem 14rem;
+    text-align: center;
+    .macbooks{
+      justify-content: space-between;
+      .block{
+        img{
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+  .main{
+    padding: 1rem 1rem;
+    text-align: center;
+    .macbooks{
+      flex-wrap: wrap;
+      justify-content: center;
+      .block{
+        align-items: center;
+        img{
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .main{
+    padding: 1rem 1rem;
+    text-align: center;
+    .macbooks{
+      display: block;
+      justify-content: center;
+      .block{
+        align-items: center;
+        img{
+          width: 140px;
+        }
+      }
+    }
+  }
+}
