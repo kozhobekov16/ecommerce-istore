@@ -4,10 +4,11 @@ import styles from './MacbookDetail.module.scss'
 import { FaLongArrowAltLeft } from 'react-icons/fa'
 import { Card, Button } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { addToCard } from '../../redux/actions'
+import { addToCard, removeInCard } from '../../redux/actions'
 const MacbookDetail = () => {
     const dispatch = useDispatch()
     const [macbook, setMacbook] = useState([])
+    const [active, setActive] = useState('Добавить в корзину')
 
     useEffect(() => {
         fetch('http://localhost:3000/data.json')
@@ -16,7 +17,13 @@ const MacbookDetail = () => {
     }, [])
     
     const addToBasket = (elem) => {
-        dispatch(addToCard(elem))
+        if(active === 'Добавить в корзину'){
+            setActive('Удалить с корзины')
+            dispatch(addToCard(elem))
+        }else{
+            setActive('Добавить в корзину')
+            dispatch(removeInCard(elem))
+        }
     }
 
     const { name } = useParams()
@@ -51,7 +58,7 @@ const MacbookDetail = () => {
                             <Card.Text>
                                 {elem.om}
                             </Card.Text>
-                            <Button variant="primary" onClick={() => addToBasket(elem)}>Добавить в карзину</Button>
+                            <Button variant="primary" onClick={() => addToBasket(elem)}>{active}</Button>
                         </Card.Body>
                     </Card>
                 </div>

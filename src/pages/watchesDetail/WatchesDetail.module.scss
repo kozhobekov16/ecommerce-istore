@@ -1,3 +1,31 @@
-.watchesDetail{
-    padding: 1rem 14rem;
+@import "src/assets/fonts/Poppins/Poppins-Black.ttf";
+.main {
+  padding: 2rem 14rem;
+  font-family: "Poppins", sans-serif;
+  .aboutPhone {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    img {
+      width: 200px;
+    }
+    a {
+      text-decoration: none;
+      color: #9f8bce;
+      font-size: 30px;
+    }
+    .block {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        background-color: #f1f1f1;
+        transition: 0.4s ease-in;
+      }
+      h4 {
+        padding-top: 1rem;
+      }
+    }
+  }
 }
