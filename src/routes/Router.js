@@ -1,4 +1,5 @@
 import React from 'react'
+import './Router.scss'
 import { Routes, Route } from 'react-router-dom'
 import {
     About,
@@ -18,7 +19,7 @@ import { CardPhoneDetail } from "../components";
 
 function Router() {
     return (
-        <div style={{ marginTop: '7.9rem' }}>
+        <div className="router">
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
