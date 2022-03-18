@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Macbooks.module.scss'
+import {motion} from "framer-motion";
 
 const Macbooks = () => {
     const [macbook, setMacbook] = useState([])
@@ -20,7 +21,12 @@ const Macbooks = () => {
                         to={`/catalog/macbooks/${mac.name}`}
                         key={mac.id}
                         className={styles.block}>
-                        <img src={mac.image} alt={mac.name} />
+                        <NavLink to={`/catalog/macbooks/${mac.name}`}>
+                            <motion.img
+                                src={mac.image}
+                                whileHover={{scale: 1.1}}
+                                alt={mac.name} />
+                        </NavLink>
                         <NavLink to={`/catalog/macbooks/${mac.name}`}>
                             {mac.name}
                         </NavLink>

@@ -4,6 +4,7 @@ import styles from './Header.module.scss'
 import logo from '../../assets/img/istore_logo.png'
 import basket from '../../assets/img/basket.webp'
 import { useSelector } from "react-redux";
+import { motion } from "framer-motion"
 
 function Header({ changeTheme , Sun, Moon, change}) {
     const state = useSelector(addcard => addcard.addToCard)
@@ -11,7 +12,12 @@ function Header({ changeTheme , Sun, Moon, change}) {
         <header>
             <div className={styles.toolbar}>
                 <NavLink to='/'>
-                    <img src={logo} className={styles.logo} alt="logo" />
+                    <motion.img
+                        src={logo}
+                        className={styles.logo}
+                        whileHover={{ scale: 1.1 }}
+                        alt="logo"
+                    />
                 </NavLink>
                 <p>
                     Магазин техники
@@ -30,7 +36,11 @@ function Header({ changeTheme , Sun, Moon, change}) {
                     </a>
                 </div>
                 <NavLink to='/basket' className={styles.basket}>
-                    <img src={basket} alt="basket" />
+                    <motion.img
+                        src={basket}
+                        alt="basket"
+                        whileHover={{ scale: 1.1 }}
+                    />
                     <span className={styles.count}>{state.length}</span>
                 </NavLink>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Watches.module.scss'
 import { NavLink } from 'react-router-dom'
+import {motion} from "framer-motion";
 
 const Watches = () => {
 
@@ -24,7 +25,11 @@ const Watches = () => {
                         className={styles.watch}
                         key={`${elem.name}_${elem.price}`}
                     >
-                        <img src={elem.image} alt="" />
+                        <motion.img
+                            src={elem.image}
+                            alt={elem.name}
+                            animate={{ x: 2 }}
+                        />
                         <h4>{elem.name}</h4>
                         <p>{elem.price}</p>
                         <p>
