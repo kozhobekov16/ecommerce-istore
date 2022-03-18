@@ -1,8 +1,8 @@
 .router{
-  marginTop: '7.9rem';
+  margin-top: 7.9rem;
 }
-@media (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 1080px) {
   .router{
-    margin: 0;
+    margin: 0rem;
   }
 }
