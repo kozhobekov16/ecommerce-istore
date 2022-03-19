@@ -57,7 +57,7 @@ function Header({changeTheme, Sun, Moon, change}) {
                     className={styles.burger}
                     onClick={toggleBurgerBtn}
                 >
-                    {toggleBurger ? <FaStream/> : <FaTimes/>}
+                    {!toggleBurger ? <FaStream/> : <FaTimes/>}
                 </div>
             </div>
             <ul className={activeBurger ? `${styles.active}` : `${styles.menu}`}>
