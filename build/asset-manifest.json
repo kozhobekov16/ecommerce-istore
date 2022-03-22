@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/istore/static/css/main.f92296f3.css",
+    "main.js": "/istore/static/js/main.6d2db77c.js",
+    "static/media/air-monterey-large_2x.mp4": "/istore/static/media/air-monterey-large_2x.a03582f357261792451c.mp4",
+    "static/media/istore_logo.png": "/istore/static/media/istore_logo.086e55f7c9f0301f5089.png",
+    "static/media/cashabck-promotion.webp": "/istore/static/media/cashabck-promotion.785cd9448c5113bdb449.webp",
+    "static/media/watches-pc-new.webp": "/istore/static/media/watches-pc-new.ee8cc1fc3769cf07cf2d.webp",
+    "static/media/iphone13.webp": "/istore/static/media/iphone13.9504e9b7298cf959e7ec.webp",
+    "static/media/Slide-iPad-.webp": "/istore/static/media/Slide-iPad-.ecc20c3a40bef9536dca.webp",
+    "static/media/airpods.webp": "/istore/static/media/airpods.080f90085eba8b1ae924.webp",
+    "static/media/watches.png": "/istore/static/media/watches.87e9d39188157cfa75c0.png",
+    "static/media/macbook-pro-2021-.webp": "/istore/static/media/macbook-pro-2021-.dbbd371fc4efcee20018.webp",
+    "static/media/new.png": "/istore/static/media/new.cf602ab2b06f96ea2b88.png",
+    "static/media/basket.webp": "/istore/static/media/basket.66cc8ac6690f58114b17.webp",
+    "static/media/neeew_v4BVwYs.webp": "/istore/static/media/neeew_v4BVwYs.64096caa09765131545b.webp",
+    "static/media/empty.svg": "/istore/static/media/empty.5b93473d96be5323b15fbda2e9e169f7.svg",
+    "static/media/404.svg": "/istore/static/media/404.6bec3db7b11ed28a169054a40617856a.svg",
+    "index.html": "/istore/index.html",
+    "main.f92296f3.css.map": "/istore/static/css/main.f92296f3.css.map",
+    "main.6d2db77c.js.map": "/istore/static/js/main.6d2db77c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f92296f3.css",
+    "static/js/main.6d2db77c.js"
+  ]
+}
